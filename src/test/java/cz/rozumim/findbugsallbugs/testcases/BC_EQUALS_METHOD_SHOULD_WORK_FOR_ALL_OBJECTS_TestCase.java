@@ -8,7 +8,12 @@ import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.detect.DumbMethods;
 
-
+/**
+ * @See http://findbugs.sourceforge.net/bugDescriptions.html#BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS
+ * 
+ * @author ytus
+ *
+ */
 public class BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS_TestCase implements FindbugsTestCase {
 
 	class BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS {

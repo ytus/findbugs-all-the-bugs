@@ -11,7 +11,11 @@ import cz.rozumim.findbugsallbugs.testcases.CN_IDIOM_TestCase;
 import cz.rozumim.findbugsallbugs.testcases.HE_EQUALS_USE_HASHCODE_TestCase;
 import edu.umd.cs.findbugs.BugReporter;
 
-
+/**
+ * 
+ * @author ytus
+ *
+ */
 public class TestsRunner {
 
 	private static final transient Logger log = Logger
@@ -30,6 +34,7 @@ public class TestsRunner {
 			
 			log.info("testCase=" + testCase);
 
+			// first check that classes with bugs really have them
 			for (Class c : testCase.getClassesWithBug()) {
 
 				log.info("+- classWithBug=" + c.getName());
@@ -42,6 +47,7 @@ public class TestsRunner {
 						DetectorAssert.ofType(testCase.getBugType()));
 			}
 
+			// then check that classes without bugs really don't have them
 			for (Class c : testCase.getClassesWithoutBug()) {
 				
 				log.info("+- classWithoutBug=" + c.getName());
