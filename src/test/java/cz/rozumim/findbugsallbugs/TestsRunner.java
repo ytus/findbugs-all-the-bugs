@@ -8,6 +8,7 @@ import com.youdevise.fbplugins.tdd4fb.DetectorAssert;
 import cz.rozumim.findbugsallbugs.testcases.BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS_TestCase;
 import cz.rozumim.findbugsallbugs.testcases.CN_IDIOM_NO_SUPER_CALL_TestCase;
 import cz.rozumim.findbugsallbugs.testcases.CN_IDIOM_TestCase;
+import cz.rozumim.findbugsallbugs.testcases.DMI_RANDOM_USED_ONLY_ONCE_TestCase;
 import cz.rozumim.findbugsallbugs.testcases.HE_EQUALS_USE_HASHCODE_TestCase;
 import edu.umd.cs.findbugs.BugReporter;
 
@@ -25,7 +26,9 @@ public class TestsRunner {
 			new HE_EQUALS_USE_HASHCODE_TestCase(),
 			new BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS_TestCase(),
 			new CN_IDIOM_TestCase(),
-			new CN_IDIOM_NO_SUPER_CALL_TestCase()};  
+			new CN_IDIOM_NO_SUPER_CALL_TestCase(), 
+			new DMI_RANDOM_USED_ONLY_ONCE_TestCase()
+			};  
 	
 	@Test
 	public void test() throws Exception {
